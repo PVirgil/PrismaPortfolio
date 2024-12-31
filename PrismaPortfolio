@@ -1,0 +1,125 @@
+echo "# PrismaPortfolio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PVirgil/PrismaPortfolio.git
+git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisma Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Prisma Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Prisma, a web developer and designer passionate about creating valuable digital experiences.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A brief description of Project 1.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A brief description of Project 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <h3>How to Build a Website</h3>
+                <p>A beginner's guide to web development.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Top 10 Design Tips</h3>
+                <p>Improve your website's design with these tips.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prisma Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    margin: 1em;
+}
+
+.portfolio-grid, .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.portfolio-item, .blog-post {
+    border: 1px solid #ccc;
+    padding: 1em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+// Dynamic blog posts simulation
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("Welcome to Prisma Portfolio!");
+});
